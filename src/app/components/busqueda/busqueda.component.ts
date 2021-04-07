@@ -21,7 +21,7 @@ export class BusquedaComponent implements OnInit {
     this.activatedRoute.params.subscribe( params => {      
       this.heroes = this._heroesService.buscarHeroes(params['id']);
       this.termino = params['id'];
-      //console.log(this.heroe)
+      //console.log(this.heroes)
     });
   }
 
